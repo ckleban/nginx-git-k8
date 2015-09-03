@@ -31,5 +31,3 @@ spec:
         gitRepo:
           Repository: https://github.com/ckleban/sample-website
 
-   
-# /usr/share/nginx/html
