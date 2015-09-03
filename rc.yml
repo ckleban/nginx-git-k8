@@ -10,17 +10,17 @@ spec:
   
   selector:
     app: website-from-git
-    deployment: v1
+    deployment: v2
     
   template:
     metadata:
       labels:
         app: website-from-git
-        deployment: v1
+        deployment: v2
     spec:
       containers:
       - name: nginx
-        image: ckleban/nginx-from-git:v1
+        image: ckleban/nginx-from-git:v2
         ports:
         - containerPort: 80
         volumeMounts:

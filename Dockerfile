@@ -20,7 +20,10 @@ RUN ln -sf /dev/stderr /var/log/nginx/error.log
 
 VOLUME ["/var/cache/nginx"]
 
+### Kleban's modifcations are here:
 COPY default.conf /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/nginx.conf
+### End kleban's mods
 
 EXPOSE 80 443
 
