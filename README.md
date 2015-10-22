@@ -1,3 +1,3 @@
 # nginx-git-k8
-nginx with gitrepo volume type
-f
+Kubernetes configuration files for a nginx container that loads html content auto magically from a github repo
+
