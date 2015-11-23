@@ -4,7 +4,7 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: nginx-gitrepo-v0.1
+  name: nginx-gitrepo-v0.2
 spec:
   replicas: 2
   selector:
@@ -27,5 +27,5 @@ spec:
       - name: gitdata
         gitRepo:
           Repository: https://github.com/ckleban/sample-website
-          Revision: 2fce3f52f28b0eb52fe2fd4fdec34eceab05122f
+          Revision: a06bea67ed64e9c42a3486beed0b8c8f8475059e
 
