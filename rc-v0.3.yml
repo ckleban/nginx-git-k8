@@ -25,6 +25,13 @@ spec:
         volumeMounts:
         - mountPath: /wwwdata
           name: gitdata
+        resources:
+          requests:
+            cpu: "250m"
+            mem: "128Mi"
+          limits:
+            cpu: "250m"
+            mem: "256Mi"
       volumes:
       - name: gitdata
         gitRepo:
